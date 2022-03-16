@@ -1,0 +1,13 @@
+<h2>Pagina 1</h2>
+<input type="text"
+        placeholder="Input con interracion de ciclo de vida"
+        [(ngModel)]="nombre">
+
+<input type="text"
+        placeholder="Sin ciclo de vida">
+
+<button (click)="guardar()">
+    Click
+</button>
+
+<app-muestra-nombre [nombre]="nombre"></app-muestra-nombre>
